@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Under Development</title>
+    <style>
+        /* Basic Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body and Background */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #1a1a1a;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: white;
+            margin: 0;
+            overflow: hidden;
+        }
+
+        /* Main container styling */
+        .container {
+            text-align: center;
+            padding: 20px;
+            border: 5px solid #fff;
+            border-radius: 20px;
+            background-color: rgba(0, 0, 0, 0.8);
+            box-shadow: 0 0 40px rgba(255, 255, 255, 0.2);
+        }
+
+        /* Title styling */
+        h1 {
+            font-size: 3rem;
+            animation: pulse 1.5s infinite alternate;
+            text-shadow: 0 0 10px rgba(255, 255, 255, 0.6), 0 0 20px rgba(255, 255, 255, 0.4);
+        }
+
+        /* Animated text effect */
+        p {
+            font-size: 1.2rem;
+            color: #f5a623;
+            animation: glowText 1.5s ease-in-out infinite alternate;
+        }
+
+        /* Pulse effect for title */
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+                color: #fff;
+            }
+            100% {
+                transform: scale(1.1);
+                color: #ff4081;
+            }
+        }
+
+        /* Glowing effect for the message text */
+        @keyframes glowText {
+            0% {
+                text-shadow: 0 0 10px #f5a623, 0 0 20px #f5a623, 0 0 30px #f5a623;
+                color: #f5a623;
+            }
+            100% {
+                text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #ff4081;
+                color: #ff4081;
+            }
+        }
+
+        /* Button styling */
+        .btn {
+            margin-top: 20px;
+            padding: 15px 30px;
+            background-color: #ff4081;
+            border: none;
+            border-radius: 10px;
+            color: white;
+            font-size: 1.1rem;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+
+        /* Button hover effect */
+        .btn:hover {
+            transform: scale(1.1);
+            background-color: #f5a623;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Under Development</h1>
+        <p>Our site is currently under development. Stay tuned for updates!</p>
+        <button class="btn" onclick="alert('We are working on it!')">Notify Me</button>
+    </div>
+</body>
+</html>
